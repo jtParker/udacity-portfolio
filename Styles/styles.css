@@ -1,15 +1,9 @@
-body {
-  width: 100%;
-}
-
-header {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 20px;
-  border-bottom: 4px solid #7d97ad;
-}
-
-h1, h2, h3, h4, p, a {
+h1,
+h2,
+h3,
+h4,
+p,
+a {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -51,22 +45,30 @@ p {
   color: #2d3c49;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #7d97ad;
+}
+
 .logo {
   height: 60px;
   margin: 20px;
 }
 
 .name {
-  display: inline-block;
   text-align: right;
   float: right;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .hero {
   width: 100%;
   height: 200px;
-  background-image: url("/images/blur-close-up-code-mobile.jpg");
+  background: url("/images/code-mobile.jpeg") no-repeat center;
+  background-size: fill;
 }
 
 .feature-item {
@@ -82,7 +84,7 @@ p {
 
 @media screen and (min-width: 401px) {
   .hero {
-    background-image: url("/images/blur-close-up-code.jpg");
+    background-image: url("/images/code.jpeg");
   }
 }
 
@@ -119,7 +121,7 @@ p {
   }
   .feature-item img {
     width: 70%;
-    height: 20vh;
+    height: 13vh;
   }
 }
 
@@ -137,6 +139,6 @@ p {
 @media screen and (min-width: 1200px) {
   .feature-item img {
     width: 75%;
-    height: 40vh;
+    height: 30vh;
   }
 }
